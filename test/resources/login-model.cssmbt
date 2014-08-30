@@ -1,0 +1,38 @@
+
+start [ not-logged ] {
+    browser-url = "http://www.google.com"
+}
+
+not-logged {
+    browser-title = check "Google"
+}
+
+logged {
+    # HTML element
+    div span = check "Hello World!"
+}
+
+authorized [ not-logged logged ] {
+    # Identifier format
+    signup__login = fill "user@user.net"
+    signup__password = fill "123"
+
+    # Class format
+    .signup__submit = click
+}
+
+not-authorized [ not-logged not-logged ] {
+    # Identifier format
+    signup__login = fill "user@user.net"
+    signup__password = fill "error"
+
+    # Class format
+    .signup__submit = click
+}
+
+
+
+
+
+
+

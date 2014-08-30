@@ -1,0 +1,25 @@
+
+
+state-01 {
+    # Identifier format
+    signup__login { fill "user@user.net" }
+}
+
+state-02 {
+    # HTML element
+    div span { check "Hello World!" }
+}
+
+event-01 [ state-01 state-02 ] {
+    # Class format
+    .signup__submit { click }
+}
+
+
+
+
+
+
+
+
+

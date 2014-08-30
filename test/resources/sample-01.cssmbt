@@ -1,0 +1,11 @@
+# Class format
+.signup__submit { click }
+
+# Identifier format
+signup__login { fill "user@user.net" }
+
+# HTML element
+div span { check "Hello World!" }
+
+
+
