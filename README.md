@@ -9,6 +9,7 @@ This file will be packaged with your application, when using `activator dist`.
 
 1. A
 2. B
+3. C
 
 Outros
 
